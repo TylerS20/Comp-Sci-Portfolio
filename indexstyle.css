@@ -1,0 +1,28 @@
+/*
+    Document   : indexstyle.css
+    Created on : 2015-09-01 08:09 PM
+    Author     : TShepp
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+/*General Page*/
+body{background-color:rgb(204,203,202);}
+#welcome-title{position:absolute; top:480px; left:20px;}
+#borders{border:5px groove blue; padding:5px}
+
+/*Titles and Paragraphs*/
+h1{color:white; font-size:90px; font-family:Arial, sans-serif}
+h2{font-family:cursive, serif; font-size:30px; color:blue}
+p, ul{font-family:sans-serif}
+
+/* Navigation Bar*/
+#nav-bar{text-align:center; color:blue; border-bottom:2px groove blue; background-color:white;}
+
+/*Links*/
+a:link{color:white;}
+a:visited{color:black;}
+a:hover{background-color:blueviolet;}
+a:active{color:purple;}
+a:focus{color:purple;}
