@@ -15,10 +15,10 @@ root {
  body{
             background-color:rgb(204,203,202); 
             border:5px groove blueviolet;
-            padding:5px
+            padding:5px;
         }
-    p{font-family:sans-serif}
-    h2{color:blueviolet}
+    p{font-family:sans-serif;}
+    h2{color:blueviolet; font-family:cursive;}
     #main-header{
         position:absolute;
         left:20px;
@@ -26,7 +26,7 @@ root {
         color:white;
         font-size:70px;
     }
-    #example{color:blueviolet}
+    #example{color:blueviolet;}
         
      /*Links*/
   a:link, a:visited{
@@ -38,7 +38,7 @@ root {
         text-align:center;
         padding:4px;
         text-decoration:none;
-        display:inline
+        display:inline;
     }
     
     a:hover, a:active{
@@ -62,9 +62,9 @@ root {
     transition: 1s ease-in-out;
   }
   .showbox.slideright:hover {
-    -webkit-transform: translate(40em,0);
-    -moz-transform: translate(40em,0);
-    -o-transform: translate(40em,0);
-    -ms-transform: translate(40em,0);
-    transform: translate(40em,0);
+    -webkit-transform: translate(70em,0);
+    -moz-transform: translate(70em,0);
+    -o-transform: translate(70em,0);
+    -ms-transform: translate(70em,0);
+    transform: translate(70em,0);
   }

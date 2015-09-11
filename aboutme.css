@@ -15,16 +15,16 @@ root {
   body{
             background-color:rgb(204,203,202); 
             border:5px groove purple;
-            padding:5px
+            padding:5px;
         }
-    h2{color:purple; font-family:cursive}
-    p{font-family: sans-serif}
+    h2{color:purple; font-family:cursive;}
+    p{font-family: sans-serif;}
     #main-title{
                 position:absolute; 
                 top:400px; 
                 left:50px; 
                 font-size:70px; 
-                color:purple
+                color:purple;
                }
   #picture-me{
       position:absolute;
@@ -40,11 +40,11 @@ root {
         text-align:center;
         padding:4px;
         text-decoration:none;
-        display:inline
+        display:inline;
     }
     
     a:hover, a:active{
         background-color:#660066;
     }
      
-   #img{float:right; margin:20px}
+   #img{float:right; margin:20px;}

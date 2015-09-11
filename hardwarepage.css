@@ -14,10 +14,10 @@ root {
  body{
             background-color:rgb(204,203,202);
             border:5px groove indigo;
-            padding:5px
+            padding:5px;
         }
-    p{font-family:sans-serif}   
-    h2{color:indigo}
+    p{font-family:sans-serif;}   
+    h2{color:indigo; font-family:cursive;}
     #main-header{
                 color:white; 
                 font-size:70px;
@@ -37,7 +37,7 @@ root {
         text-align:center;
         padding:4px;
         text-decoration:none;
-        display:inline
+        display:inline;
     }
     
     a:hover, a:active{
@@ -46,8 +46,13 @@ root {
 
 
 /*Images*/
-#img-1, #img-2, #img-3, #img-4, #img-5{float:right; border:3px indigo solid}
+#img-1, #img-2, #img-3, #img-4, #img-5{float:right; border:3px indigo solid;}
 
-#collage-top{text-align:center}
-#collage-middle{text-align:center}
-#collage-bottom{text-align:center}
+#collage-top{text-align:center;}
+#collage-middle{text-align:center;}
+#collage-bottom{text-align:center;}
+
+#arrow-1{position:absolute; top:1550px;left:500px;}
+#arrow-2{position:absolute; top:1550px;left:650px;}
+#arrow-3{position:absolute; top:1550px;left:800px;}
+#arrow-4{position:absolute; top:1900px;left:650px;}

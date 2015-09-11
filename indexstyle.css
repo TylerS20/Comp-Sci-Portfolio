@@ -9,13 +9,13 @@
 
 /*General Page*/
 body{background-color:rgb(204,203,202);}
-#borders{border:5px groove blue; padding:5px}
-#mini-list{backgrolound-cor:none}
+#borders{border:5px groove blue; padding:5px;}
+#mini-list{backgrolound-cor:none;}
 
 /*Titles and Paragraphs*/
-#welcome-title{position:absolute; top:480px; left:20px; font-size:90px; color:white}
-h2{font-family:cursive, serif; font-size:30px; color:blue}
-p, ul{font-family:sans-serif}
+#welcome-title{position:absolute; top:480px; left:20px; font-size:90px; color:white;}
+h2{font-family:cursive, serif; font-size:30px; color:blue;}
+p, ul{font-family:sans-serif;}
 
 
 /*Links*/
@@ -28,7 +28,7 @@ p, ul{font-family:sans-serif}
         text-align:center;
         padding:4px;
         text-decoration:none;
-        display:inline
+        display:inline;
     }
     
     a:hover, a:active{
