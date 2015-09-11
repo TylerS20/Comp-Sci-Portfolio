@@ -1,0 +1,53 @@
+/*
+    Document   : hardwarepage.css
+    Created on : 2015-09-11 05:22 AM
+    Author     : TShepp
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+root {
+    display: block;
+}
+
+ body{
+            background-color:rgb(204,203,202);
+            border:5px groove indigo;
+            padding:5px
+        }
+    p{font-family:sans-serif}   
+    h2{color:indigo}
+    #main-header{
+                color:white; 
+                font-size:70px;
+                position:absolute;
+                top:250px;
+                left:50px;
+                }
+    
+    /*Links*/
+        
+    a:link, a:visited{
+        display:block;
+        font-weight:bold;
+        color:white;
+        background-color:indigo;
+        width:120px;
+        text-align:center;
+        padding:4px;
+        text-decoration:none;
+        display:inline
+    }
+    
+    a:hover, a:active{
+        background-color:#3C0068;
+    }
+
+
+/*Images*/
+#img-1, #img-2, #img-3, #img-4, #img-5{float:right; border:3px indigo solid}
+
+#collage-top{text-align:center}
+#collage-middle{text-align:center}
+#collage-bottom{text-align:center}
