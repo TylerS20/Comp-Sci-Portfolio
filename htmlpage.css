@@ -1,0 +1,70 @@
+/*
+    Document   : htmlpage.css
+    Created on : 2015-09-11 05:18 AM
+    Author     : TShepp
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+root {
+    display: block;
+}
+
+
+ body{
+            background-color:rgb(204,203,202); 
+            border:5px groove blueviolet;
+            padding:5px;
+        }
+    p{font-family:sans-serif;}
+    h2{color:blueviolet; font-family:cursive;}
+    #main-header{
+        position:absolute;
+        left:20px;
+        top:500px;
+        color:white;
+        font-size:70px;
+    }
+    #example{color:blueviolet;}
+        
+     /*Links*/
+  a:link, a:visited{
+        display:block;
+        font-weight:bold;
+        color:white;
+        background-color:blueviolet;
+        width:120px;
+        text-align:center;
+        padding:4px;
+        text-decoration:none;
+        display:inline;
+    }
+    
+    a:hover, a:active{
+        background-color:#7C27CB;
+    }
+        
+        
+        /*DEMONSTRATION*/
+        .showbox {
+    float: left;
+    margin: 4em 1em;
+    width: 150px;
+    height: 60px;
+    border: 2px solid blueviolet;
+    background-color: #fff;
+    line-height: 60px;
+    text-align: center;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+  .showbox.slideright:hover {
+    -webkit-transform: translate(70em,0);
+    -moz-transform: translate(70em,0);
+    -o-transform: translate(70em,0);
+    -ms-transform: translate(70em,0);
+    transform: translate(70em,0);
+  }

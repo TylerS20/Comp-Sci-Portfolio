@@ -1,0 +1,50 @@
+/*
+    Document   : aboutme.css
+    Created on : 2015-09-11 05:21 AM
+    Author     : TShepp
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+root {
+    display: block;
+}
+
+
+  body{
+            background-color:rgb(204,203,202); 
+            border:5px groove purple;
+            padding:5px;
+        }
+    h2{color:purple; font-family:cursive;}
+    p{font-family: sans-serif;}
+    #main-title{
+                position:absolute; 
+                top:400px; 
+                left:50px; 
+                font-size:70px; 
+                color:purple;
+               }
+  #picture-me{
+      position:absolute;
+  }      
+  
+        /*Links*/
+    a:link, a:visited{
+        display:block;
+        font-weight:bold;
+        color:white;
+        background-color:purple;
+        width:120px;
+        text-align:center;
+        padding:4px;
+        text-decoration:none;
+        display:inline;
+    }
+    
+    a:hover, a:active{
+        background-color:#660066;
+    }
+     
+   #img{float:right; margin:20px;}
