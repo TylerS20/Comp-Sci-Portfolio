@@ -1,0 +1,29 @@
+/* Main body CSS */
+body{
+    color:white;
+    background-color:maroon;
+  }
+  h1{
+    text-align:center;
+  }
+  #bar{
+    text-align:center;
+  }
+  #todolist{
+    text-align:center;
+  }
+  
+/*Links*/
+ a:link, a:visited{
+        font-weight:bold;
+        color:rgb(102, 0, 0);
+        background-color:white;
+        text-align:center;
+        padding:4px;
+        text-decoration:none;
+        display:inline;
+    }
+    
+    a:hover, a:active{
+        background-color:gainsboro;
+    }

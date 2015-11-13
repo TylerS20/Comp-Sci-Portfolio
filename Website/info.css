@@ -1,0 +1,30 @@
+/*Links*/
+ a:link, a:visited{
+
+        font-weight:bold;
+        color:slategrey;
+        background-color:white;
+        text-align:center;
+        padding:4px;
+        text-decoration:none;
+        display:inline;
+    }
+    
+    a:hover, a:active{
+        background-color: gainsboro;
+    }
+    
+
+body{background-color:lightslategrey; color:white;}
+
+#title{text-align:center;}
+
+#list li{
+        display:inline-block;
+        text-align:center;
+        padding-left:10.5%;
+    }
+    
+#par{
+    text-align:center;
+    }

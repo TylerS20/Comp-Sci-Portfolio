@@ -1,0 +1,19 @@
+/* Main body CSS */
+body{background-color: rgb(55, 41, 137); color: white; text-align:center;}
+
+#title{text-align: center;}
+
+/*Links*/
+ a:link, a:visited{
+        font-weight:bold;
+        color: rgb(47, 35, 118);
+        background-color:white;
+        text-align:center;
+        padding:4px;
+        text-decoration:none;
+        display:inline;
+    }
+    
+    a:hover, a:active{
+        background-color:lightgray;
+    }

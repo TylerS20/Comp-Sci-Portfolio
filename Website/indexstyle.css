@@ -20,11 +20,10 @@ p, ul{font-family:sans-serif;}
 
 /*Links*/
  a:link, a:visited{
-        display:block;
+
         font-weight:bold;
         color:white;
         background-color:blue;
-        width:120px;
         text-align:center;
         padding:4px;
         text-decoration:none;

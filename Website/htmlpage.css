@@ -30,11 +30,9 @@ root {
         
      /*Links*/
   a:link, a:visited{
-        display:block;
         font-weight:bold;
         color:white;
         background-color:blueviolet;
-        width:120px;
         text-align:center;
         padding:4px;
         text-decoration:none;
