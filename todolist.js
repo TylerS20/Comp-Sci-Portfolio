@@ -15,17 +15,17 @@ form.addEventListener( 'submit', function(evt) {
   if (dropdown.value == "underline"){
     todo.innerHTML += '<div style= "text-decoration: underline;">' + text + '</div>';
   }
-  if (dropdown.value == "bold"){
+  else if (dropdown.value == "bold"){
     todo.innerHTML += '<div style= "font-weight: bold;">' + text + '</div>';
   }
-  if (dropdown.value == "blue"){
+  else if (dropdown.value == "blue"){
     todo.innerHTML += '<div style= "color: lightblue;">' + text + '</div>';
 
   }
-  if (dropdown.value == "italics"){
+  else if (dropdown.value == "italics"){
     todo.innerHTML += '<div style= "font-style: italic;">' + text + '</div>';
   }
-  if (dropdown.value == "none"){
+  else if (dropdown.value == "none"){
     todo.innerHTML += '<div>' + text + '</div>'
   }
   
