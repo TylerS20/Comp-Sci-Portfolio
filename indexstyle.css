@@ -8,8 +8,7 @@
 */
 
 /*General Page*/
-body{background-color:rgb(204,203,202);}
-#borders{border:5px groove blue; padding:5px;}
+body{background-color:rgb(204,203,202); border:5px groove blue; padding:5px;}
 #mini-list{backgrolound-cor:none;}
 
 /*Titles and Paragraphs*/

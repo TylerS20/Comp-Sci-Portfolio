@@ -1,11 +1,14 @@
 // JavaScript File
+
+//Gets the elements by using the Id's in the HTML file
 var todo = document.getElementById('todolist'),
     form = document.getElementById('myform'),
     field = document.getElementById('newitem'),
     dropdown= document.getElementById("dropdown");
 
 
-    
+//When user hits submit, the function displays the text at the bottom and adds style to it 
+//according to user selection (bold, underline, etc.).
 form.addEventListener( 'submit', function(evt) {
   var text = field.value;
   
@@ -30,7 +33,7 @@ form.addEventListener( 'submit', function(evt) {
 }, false);
 
 
-
+//This allows the user to click an item to cross it out and to delete it by clicking it again.
 todo.addEventListener( 'click', function(evt) {
   var tar = evt.target;
 
