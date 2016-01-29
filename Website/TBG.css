@@ -1,0 +1,40 @@
+/*Properties of the background and text*/
+body{
+    background-image: url("http://p1.pichost.me/i/68/1928853.jpg?dl=1");
+    color: black;
+    text-align: center;
+}
+
+/*Heading Properties*/
+h1{
+    color:white;
+    font-family:serif;
+    font-size:50px;
+}
+
+/* The properties of the white rectangle in the middle of the page*/
+#rectangle{
+    width: 42%;
+    height: 145%;
+    background: white;
+    position: absolute;
+    left:29%;
+    top: 150px;
+    z-index:-1;
+}
+
+/*Links*/
+ a:link, a:visited{
+
+        font-weight:bold;
+        color:midnightblue;
+        background-color:white;
+        text-align:center;
+        padding:4px;
+        text-decoration:none;
+        display:inline;
+    }
+    
+    a:hover, a:active{
+        background-color:whitesmoke;
+    }
