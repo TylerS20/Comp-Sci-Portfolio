@@ -1,0 +1,25 @@
+/*Links*/
+ a:link, a:visited{
+
+        font-weight:bold;
+        color: #4d0000;
+        background-color:white;
+        text-align:center;
+        padding:4px;
+        text-decoration:none;
+        display:inline;
+    }
+    
+    a:hover, a:active{
+        background-color: #f2f2f2;
+    }
+    
+/*General Styling */
+body{background-color: #4d0000;}
+h1{color:white; text-align:center;}
+h2{color:white;}
+p{color:white;}
+#coding{background-color:white; color:black;}
+li{color:white;}
+
+#firstPicture{text-align:center;}

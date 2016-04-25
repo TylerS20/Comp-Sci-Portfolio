@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vindinium Page</title>
+        <link rel="stylesheet" type="text/css" href="vindinium.css">
+    </head>
+    <body>
+
+<!--Navigation Bar-->
+    <p style="text-align:center">
+       <a href="http://tylers20.github.io/Comp-Sci-Portfolio/">Home</a>
+       <a href="aboutme.html">About Me</a>
+       <a href="htmlpage.html">HTML</a>
+       <a href="hardwarepage.html">Hardware</a>
+       <a href="info.html">Sports Info</a>
+       <a href="calc.html">Calculator</a>
+       <a href="todolist.html">To Do List</a>
+       <a href="TBG.html">Text-Based Game</a>
+       <a href="vindinium.html">Vindinium</a>
+    </p>
+    
+<!--Webpage Content-->
+    <h1>Vindinium</h1>
+    
+    <div id="firstPicture">
+     <img src="https://s3.amazonaws.com/poly-screenshots.angel.co/Project/a0/120663/73d89cbf74dde0cacf22233ec6dc6a79-original.png" width="50%" alt="Image of Vindinium">
+    </div>
+     
+    <h2>What is Vindinium?</h2>
+    <p>Vindinium is a game that is played where the users code their own bots to play against three other bots created by different people.
+    The users take control over their bots by using a programming language of their choice. Since I knew basic JS, I created my bot 
+    using javascript. In the game, players are tasked with locating mines and trying to get more gold than the other three players. Each bot 
+    has a limited health, where if one loses all their health, they die and lose all of the mines they have in possession. Players can die due to 
+    other players attacking or the goblins attacking when you claima  mine. To prevent death,players can code their bot to go to a tavern and 
+    restore 50 health points for a low cost of 2 gold. This game is played in turns. Each player goes around and does an action for each of their 
+    turns, for example, going to a tavern, finding a free mine, or attacking a player. Depending on the where the game is played (public server 
+    or private), the number of turns differs. On the private server where my games were played, there were a total of 1200 turns for the four 
+    players (300 turns each).
+    <br>
+    <br>
+    In the picture above, the beer bottles represent the taverns, the mining carts with green characters above them are the mines and goblins,
+    and the heroes/bots are represented with the different colored characters (green, red, blue, or yellow.</p>
+    
+    <br>
+    
+    <h2>My Bot's Code</h2>
+    <p>Below, I have inserted the code that makes the bot I have created.</p>
+    
+    <div id="coding"><code><pre>
+        
+var Bot = require('bot');
+var PF = require('pathfinding');
+//var bot = new Bot('8kkrbym3', 'training', 'http://vindinium.org'); //Put your bot's code here and change training to Arena when you want to fight others.
+var bot = new Bot('426esiv9', 'arena', 'http://52.53.211.7:9000'); //Put your bot's code here and change training to Arena when you want to fight others.
+var goDir;
+var Promise = require('bluebird');
+Bot.prototype.botBrain = function() {
+    return new Promise(function(resolve, reject) {
+        _this = bot;
+        
+        //////* Write your bot below Here *//////
+        //////* Set `myDir` in the direction you want to go and then bot.goDir is set to myDir at the bottom *////////
+
+        /*                                      *
+         * This Code is global data!            *
+         *                                      */
+
+        // Set myDir to what you want and it will set bot.goDir to that direction at the end.  Unless it is "none"
+        var myDir;
+        var myPos = [bot.yourBot.pos.x, bot.yourBot.pos.y];
+        
+        //Finds the position of each bot based on id number
+        var botPosOne = [bot.bot1.pos.x, bot.bot1.pos.y];
+        var botPosTwo = [bot.bot2.pos.x, bot.bot2.pos.y];
+        var botPosThree = [bot.bot3.pos.x, bot.bot3.pos.y];
+        var botPosFour = [bot.bot4.pos.x, bot.bot4.pos.y];
+        
+        //Finds the number of mines each bot has
+        var minesBotOne = bot.bot1.mineCount;
+        var minesBotTwo = bot.bot2.mineCount;
+        var minesBotThree = bot.bot3.mineCount;
+        var minesBotFour = bot.bot4.mineCount;
+
+        
+        var enemyBots = [];
+        if(bot.yourBot.id != 1) enemyBots.push(bot.bot1);
+        if(bot.yourBot.id != 2) enemyBots.push(bot.bot2);
+        if(bot.yourBot.id != 3) enemyBots.push(bot.bot3);
+        if(bot.yourBot.id != 4) enemyBots.push(bot.bot4);
+
+        var enemyMines = [];
+        if(bot.yourBot.id != 1) enemyMines = enemyMines.concat(bot.bot1.mines);
+        if(bot.yourBot.id != 2) enemyMines = enemyMines.concat(bot.bot2.mines);
+        if(bot.yourBot.id != 3) enemyMines = enemyMines.concat(bot.bot3.mines);
+        if(bot.yourBot.id != 4) enemyMines = enemyMines.concat(bot.bot4.mines);
+
+        /*                                      *
+         * This Code Decides WHAT to do         *
+         *                                      */
+         
+        var task;
+        
+        //Go to tavern
+        if(bot.yourBot.life < 40){
+            task = "tavern";
+        }
+        //If bot one has the most mines, attack it
+        else if(minesBotOne >= minesBotTwo && minesBotOne >= minesBotThree && minesBotOne >= minesBotFour){
+            //Prevents bot from attacking itself
+            if(bot.yourBot.id == 1){
+                task = "freemines";
+            }else{
+                task = "attack1";
+            }
+        }
+        //If bot two has the most mines, attack it
+        else if(minesBotTwo >= minesBotOne && minesBotTwo >= minesBotThree && minesBotTwo >= minesBotFour){
+            if(bot.yourBot.id == 2){
+                task = "freemines";
+            }else{
+                task = "attack2";
+            }
+        }
+        //If bot three has the most mines, attack it
+        else if(minesBotThree >= minesBotOne && minesBotThree >= minesBotTwo && minesBotThree >= minesBotFour){
+            if(bot.yourBot.id == 3){
+                task = "freemines";
+            }else{
+                task = "attack3";
+            }
+        }
+        //If bot four has the most mines, attack it
+        else if(minesBotFour >= minesBotOne && minesBotFour >= minesBotTwo && minesBotFour >= minesBotThree){
+            if(bot.yourBot.id == 4){
+                task = "freemines";
+            }else{
+                task = "attack4";
+            }
+        }
+        else{
+            task = "freemines";
+        }
+
+
+        /*                                      *
+         * This Code Determines HOW to do it    *
+         *                                      */
+
+        // This Code find the nearest freemine and sets myDir toward that direction //
+        if(task === "freemines") {
+            var closestMine = bot.freeMines[0];
+            for(i = 0; i < bot.freeMines.length; i++) {
+                if(bot.findDistance(myPos, closestMine) > bot.findDistance(myPos, bot.freeMines[i])) {
+                    closestMine = bot.freeMines[i];
+                }
+            }
+            console.log("Claiming a Free Mine!");
+            myDir = bot.findPath(myPos, closestMine);
+        }
+        
+        //Tells the bot to go to the tavern
+        if(task === "tavern"){
+            //This will determine which tavern is closest
+            var closestTavern = bot.taverns[0];
+            for(i = 0; i < bot.taverns.length; i++){
+                if(bot.findDistance(myPos, closestTavern) > bot.findDistance(myPos, bot.taverns[i])) {
+                    closestTavern = bot.taverns[i];
+                }
+            }
+            console.log("Going to the Tavern!");
+            myDir = bot.findPath(myPos, closestTavern);
+        }
+        
+        //Attack Bot 1
+        if(task === "attack1"){
+            console.log("Attacking Bot 1!");
+            myDir = bot.findPath(myPos, botPosOne);
+        }
+        
+        //Attack Bot 2
+        if(task === "attack2"){
+            console.log("Attacking Bot 2!");
+            myDir = bot.findPath(myPos, botPosTwo);
+        }
+        
+        //Attack Bot 3
+        if(task === "attack3"){
+            console.log("Attacking Bot 3!");
+            myDir = bot.findPath(myPos, botPosThree);
+        }
+        
+        //Attack Bot 4
+        if(task === "attack4"){
+            console.log("Attacking Bot 4!");
+            myDir = bot.findPath(myPos, botPosFour);
+        }
+
+        /*                                                                                                                              *
+         * This Code Sets your direction based on myDir.  If you are trying to go to a place that you can't reach, you move randomly.   *
+         * Otherwise you move in the direction set by your code.  Feel free to change this code if you want.                            */
+         
+        if(myDir === "none") {
+            console.log("Going Random!");
+            var rand = Math.floor(Math.random() * 4);
+            var dirs = ["north", "south", "east", "west"];
+            bot.goDir = dirs[rand];
+        } else {
+            bot.goDir = myDir;
+        }
+
+        ///////////* DON'T REMOVE ANTYTHING BELOW THIS LINE *//////////////
+        resolve();
+    });
+};
+bot.runGame();
+    </pre></code></div>
+    
+    <br>
+    
+    <h2>Explanation of Code</h2>
+    <p>In the code, most, if not all of the purposes of each function, variable, if/else statement, or for loops is briefly described. Each
+    description is set off by a double //. 
+    <br>
+    I will describe three functions of the bot and how it works.
+    <br>
+    <ol>
+        <li>
+            Find Free Mines: The first thing that this bot does is find free mines. In the "This code determines WHAT to do it" section, the bot
+            may be given the task "freemines". It will be given this task under the certain circumstances that were given in the if/else 
+            statements. If it is given the task "freemines", it will run a for loop located in the "This code determines HOW to do it" section.
+            The code starts off saying "if(task === freemines)" which states that if the task is set to "freemines" then to run the code inside
+            the if statement. The next piece of code is "var closestMine = bot.freeMines[0]". This is taking data from the game about which
+            mines are free and sets it as "closestMine". Following that code is a for loop that uses the global data to figure out which mine is
+            the closest. Once all of that is run, the bot is set to go to the closest free mine and claim it while putting in the console that it 
+            is "Claiming a Free Mine!"
+        </li>
+        <li>
+            Go to tavern: The bot has to determine whether it should go to a tavern or perform a different action. In the "What to Do" section,
+            there is an if statement that takes global data about my bot's life saying that if it is below 40, then the bot's task will be set
+            to "tavern" which tells the bot to go to the taverns. In the "How to do it" section, there is an if statement saying that if the
+            task is equal to "tavern" then it will run the code inside. The code inside takes an array containing all of the positions of the 
+            taverns and goes through each one and determines which tavern is closest to my bot. When it has found the closest tavern, it will
+            set my bot's direction to that tavern so that it can heal.
+        </li>
+        <li>
+            Attack other bots: This code determines that when my bot has enough health, and not all the mines, it will attack gthe bot with more
+            mines than me In the "WHAT to do" section, there is an if/else statement that tells the bot what to do. "else if(minesBotOne >= 
+            minesBotTwo && minesBotOne >= minesBotThree && minesBotOne >= minesBotFour)" takes data from the 'Global Data" section and looks to 
+            see that if bot one has more than or equal to the number of mines of each of the other bots, then to run the if/else statement inside.
+            The if/else statement that is inside tells the bot which task to do. If my bot's id is equal to the bot with the most mines (or in 
+            simpler terms, if I have the most mines), then the bot will run the task "freemines". If my bot's id is not equal to that of the bot 
+            with the most mines, then my bot's task is to attack the bot that has the most, in this case Bot 1. In the "How to do it" section, 
+            it shows that if my task is set to "attack1" or attack bot 1, then it will display in the console that it is "Attacking Bot 1" and 
+            will take the position of the particular bot from the global data and set it as my bot's direction so that it is able to attack.
+        </li>
+    </ol></p>
+
+    <br>
+    
+    <h2>What did I learn?</h2>
+    <p>In the end, my bot did exactly what I wanted it to do. I was able to create it so the bot was able to attack the player who had the most
+    mines until I am the character that possesses the most. After I have more mines than everybody else, the bot waits and health as needed 
+    it. While it seemed complicated to do at first, the coding itself is actually fairly simple. The bot is programmed to look for how many
+    mines each bot has and if a bot has more than mine, my bot will attack it. After doing this activity, I was able to understand AI a little
+    more easily because I understand how the computer reads the code and follows the actions according to what it reads in the JS. I now find
+    AI to be very interesting and it was cool to learn a little bit about it this interval.</p>
+    
+    </body>
+</html>
