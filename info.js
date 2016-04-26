@@ -34,6 +34,6 @@ item3.addEventListener("click", function(){
 item4.addEventListener("click", function(){
     info1.innerHTML = "Basketball is played in 12 minute quarters.";
     info2.innerHTML = "There are 5 players per team on the court.";
-    info3.innerHTML = "Fun Fact: Stephen Curry holds the most 3-point field goals in a season with 286 made shots.";
+    info3.innerHTML = "Fun Fact: Stephen Curry holds the most 3-point field goals in a season with 402 made shots.";
 });
                        

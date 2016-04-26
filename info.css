@@ -19,7 +19,12 @@
         background-color:gainsboro;
     }
 
-body{background-color:lightslategrey; color:white;}
+body{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/fd/Roosevelt_Stadium_night_2.jpg"); 
+    background-size: 1400px;
+    color:white;
+    
+}
 
 #title{text-align:center;}
 
@@ -32,3 +37,7 @@ body{background-color:lightslategrey; color:white;}
 #par{
     text-align:center;
     }
+    
+#info1, #info2, #info3{
+    text-align:center;
+}

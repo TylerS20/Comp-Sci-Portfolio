@@ -11,18 +11,18 @@ root {
     display: block;
 }
 
- body{
-            background-color:lavender;
-        }
-    p{font-family:sans-serif;}   
-    h2{color:indigo; font-family:cursive;}
-    #main-header{
-                color:white; 
-                font-size:70px;
-                position:absolute;
-                top:250px;
-                left:50px;
-                }
+body{
+    background-color:lavender;
+    }
+p{font-family:sans-serif;}   
+h2{color:indigo; font-family:serif;}
+#main-header{
+    color:white; 
+    font-size:70px;
+    position:absolute;
+    top:250px;
+    left:50px;
+    }
     
 /*Links*/
  a:link, a:visited{
@@ -46,7 +46,7 @@ root {
     }
 
 /*Images*/
-#img-1, #img-2, #img-3, #img-4, #img-5{float:right; border:3px indigo solid;}
+#img-1, #img-2, #img-3, #img-4, #img-5{float:right;}
 
 #collage-top{text-align:center;}
 #collage-middle{text-align:center;}

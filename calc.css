@@ -1,7 +1,25 @@
 /* Main body CSS */
-body{background-color: rgb(55, 41, 137); color: white; text-align:center;}
+body{
+    background-image: url("https://newevolutiondesigns.com/images/freebies/city-wallpaper-38.jpg");
+    color: black; 
+    text-align:center;
+}
+h1{
+    color:white;
+}
 
 #title{text-align: center;}
+
+/* The properties of the white rectangle in the middle of the page*/
+#rectangle{
+    width: 20%;
+    height: 7%;
+    background: white;
+    position: absolute;
+    left:40%;
+    top: 210px;
+    z-index:-1;
+}
 
 /*Links*/
  a:link, a:visited{
@@ -9,7 +27,7 @@ body{background-color: rgb(55, 41, 137); color: white; text-align:center;}
         font-weight:bold;
         font-family:sans-serif;
         font-size:20px;
-        color: rgb(47, 35, 118);
+        color: darkslateblue;
         background-color:white;
         text-align:center;
         padding-left:26px;

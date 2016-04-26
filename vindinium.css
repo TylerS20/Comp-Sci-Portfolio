@@ -1,10 +1,10 @@
 /*General Styling */
 body{background-color: #4d0000;}
-h1{color:white; text-align:center;}
-h2{color:white;}
-p{color:white;}
+h1{color:white; text-align:center; font-family: serif;}
+h2{color:white; font-family: serif;}
+p{color:white; font-family: sans-serif;}
 #coding{background-color:white; color:black;}
-li{color:white;}
+li{color:white; font-family:sans-serif;}
 
 #firstPicture{text-align:center;}
 

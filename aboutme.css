@@ -15,7 +15,7 @@ root {
   body{
             background-color: lavender; 
         }
-    h2{color:purple; font-family:cursive;}
+    h2{color:purple; font-family:serif;}
     p{font-family: sans-serif;}
     #main-title{
                 position:absolute; 

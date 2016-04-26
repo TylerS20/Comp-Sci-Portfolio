@@ -1,7 +1,8 @@
 /* Main body CSS */
 body{
-    color:yellow;
-    background-color:royalblue;
+    background-image: url("http://www.fubiz.net/wp-content/uploads/2012/10/Cityscape-Chicago51.jpg");
+    background-size: 1400px;
+    color:white;
     font-size:15px;
   }
   h1{
@@ -12,7 +13,20 @@ body{
   }
   #todolist{
     text-align:center;
+    color:black;
   }
+  
+/* The properties of the white rectangle in the middle of the page*/
+#rectangle{
+    width: 36%;
+    height: 76.3%;
+    background: white;
+    position: absolute;
+    left:32%;
+    top: 150px;
+    z-index:-1;
+}
+  
   
 /*Links*/
  a:link, a:visited{
@@ -20,7 +34,7 @@ body{
         font-weight:bold;
         font-family:sans-serif;
         font-size:20px;
-        color: royalblue;
+        color: steelblue;
         background-color:white;
         text-align:center;
         padding-left:26px;
