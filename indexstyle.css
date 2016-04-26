@@ -12,7 +12,7 @@ body{background-color: lavender; padding:5px;}
 
 /*Titles and Paragraphs*/
 #welcome-title{position:absolute; top:480px; left:20px; font-size:90px; font-family:serif;color:white;}
-h2{font-family:serif; font-size:30px; color:bl; text-align: center;}
+h2{font-family:serif; font-size:30px; color:blue; }
 p, ul{font-family:sans-serif;}
 
 
