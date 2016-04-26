@@ -5,15 +5,22 @@ body{background-color: rgb(55, 41, 137); color: white; text-align:center;}
 
 /*Links*/
  a:link, a:visited{
+
         font-weight:bold;
+        font-family:sans-serif;
+        font-size:20px;
         color: rgb(47, 35, 118);
         background-color:white;
         text-align:center;
-        padding:4px;
+        padding-left:26px;
+        padding-right:26px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: -2px;
         text-decoration:none;
-        display:inline;
     }
     
     a:hover, a:active{
-        background-color:lightgray;
+        background-color: gainsboro;
     }
+    

@@ -10,42 +10,43 @@
 root {
     display: block;
 }
+body{
+        background-color:lavender;
+    }
+p{font-family:sans-serif;}
+h2{color:blueviolet; font-family:cursive;}
+#main-header{
+    position:absolute;
+    left:20px;
+    top:500px;
+    color:white;
+    font-size:70px;
+    }
+#example{color:blueviolet;}
+        
+/*Links*/
+a:link, a:visited{
 
+    font-weight:bold;
+    font-family:sans-serif;
+    font-size:20px;
+    color:white;
+    background-color:blueviolet;
+    text-align:center;
+    padding-left:26px;
+    padding-right:26px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: -2px;
+    text-decoration:none;
+    }
 
- body{
-            background-color:rgb(204,203,202); 
-            border:5px groove blueviolet;
-            padding:5px;
-        }
-    p{font-family:sans-serif;}
-    h2{color:blueviolet; font-family:cursive;}
-    #main-header{
-        position:absolute;
-        left:20px;
-        top:500px;
-        color:white;
-        font-size:70px;
-    }
-    #example{color:blueviolet;}
-        
-     /*Links*/
-  a:link, a:visited{
-        font-weight:bold;
-        color:white;
-        background-color:blueviolet;
-        text-align:center;
-        padding:4px;
-        text-decoration:none;
-        display:inline;
-    }
-    
-    a:hover, a:active{
-        background-color:#7C27CB;
+a:hover, a:active{
+    background-color:#7C27CB;
     }
         
-        
-        /*DEMONSTRATION*/
-        .showbox {
+/*DEMONSTRATION*/
+    .showbox {
     float: left;
     margin: 4em 1em;
     width: 150px;

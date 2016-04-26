@@ -13,9 +13,7 @@ root {
 
 
   body{
-            background-color:rgb(204,203,202); 
-            border:5px groove purple;
-            padding:5px;
+            background-color: lavender; 
         }
     h2{color:purple; font-family:cursive;}
     p{font-family: sans-serif;}
@@ -30,15 +28,21 @@ root {
       position:absolute;
   }      
   
-        /*Links*/
-    a:link, a:visited{
+/*Links*/
+ a:link, a:visited{
+
         font-weight:bold;
+        font-family:sans-serif;
+        font-size:20px;
         color:white;
         background-color:purple;
         text-align:center;
-        padding:4px;
+        padding-left:26px;
+        padding-right:26px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: -2px;
         text-decoration:none;
-        display:inline;
     }
     
     a:hover, a:active{
@@ -46,3 +50,5 @@ root {
     }
      
    #img{float:right; margin:20px;}
+   
+  
