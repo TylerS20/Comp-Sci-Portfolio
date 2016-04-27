@@ -27,7 +27,7 @@
     <div id="firstPicture">
      <img src="https://s3.amazonaws.com/poly-screenshots.angel.co/Project/a0/120663/73d89cbf74dde0cacf22233ec6dc6a79-original.png" width="50%" alt="Image of Vindinium">
     </div>
-     
+<div id="margin">
     <h2>What is Vindinium?</h2>
     <p>Vindinium is a game that is played where the users code their own bots to play against three other bots created by different people.
     The users take control over their bots by using a programming language of their choice. Since I knew basic JS, I created my bot 
@@ -52,8 +52,8 @@
         
 var Bot = require('bot');
 var PF = require('pathfinding');
-//var bot = new Bot('8kkrbym3', 'training', 'http://vindinium.org'); //Put your bot's code here and change training to Arena when you want to fight others.
-var bot = new Bot('426esiv9', 'arena', 'http://52.53.211.7:9000'); //Put your bot's code here and change training to Arena when you want to fight others.
+//var bot = new Bot('8kkrbym3', 'training', 'http://vindinium.org');
+var bot = new Bot('426esiv9', 'arena', 'http://52.53.211.7:9000');
 var goDir;
 var Promise = require('bluebird');
 Bot.prototype.botBrain = function() {
@@ -269,5 +269,6 @@ bot.runGame();
     more easily because I understand how the computer reads the code and follows the actions according to what it reads in the JS. I now find
     AI to be very interesting and it was cool to learn a little bit about it this interval.</p>
     
+</div>
     </body>
 </html>

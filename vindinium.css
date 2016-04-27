@@ -28,6 +28,10 @@ li{
 #firstPicture{
     text-align:center;
 }
+#margin{
+    margin-left:70px;
+    margin-right:70px;
+}
 
 /*Links*/
  a:link, a:visited{

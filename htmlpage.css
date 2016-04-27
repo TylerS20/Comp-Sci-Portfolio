@@ -32,6 +32,10 @@ h2{
 #example{
     color:blueviolet;
 }
+#margin{
+    margin-left:70px;
+    margin-right:70px;
+}
         
 /*Links*/
 a:link, a:visited{
@@ -70,9 +74,9 @@ a:hover, a:active{
     transition: 1s ease-in-out;
   }
   .showbox.slideright:hover {
-    -webkit-transform: translate(70em,0);
-    -moz-transform: translate(70em,0);
-    -o-transform: translate(70em,0);
-    -ms-transform: translate(70em,0);
-    transform: translate(70em,0);
+    -webkit-transform: translate(60em,0);
+    -moz-transform: translate(60em,0);
+    -o-transform: translate(60em,0);
+    -ms-transform: translate(60em,0);
+    transform: translate(60em,0);
   }

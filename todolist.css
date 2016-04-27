@@ -29,6 +29,10 @@ h1{
     top: 45%;
     z-index:-1;
 }
+#margin{
+    margin-left:32%;
+    margin-right:32%;
+}
   
   
 /*Links*/

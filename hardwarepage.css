@@ -29,6 +29,10 @@ h2{
     left:50px;
     font-family: 'Ruthie', cursive;
     }
+#margin{
+    margin-left:70px;
+    margin-right:70px;
+}
     
 /*Links*/
  a:link, a:visited{
@@ -69,20 +73,20 @@ a:hover, a:active{
 /*Arrow position*/
 #arrow-1{
     position:absolute; 
-    top:337%;
+    top:343%;
     left:35%;
 }
 #arrow-2{
     position:absolute; 
-    top:337%;
+    top:343%;
     left:48%;
 }
 #arrow-3{
     position:absolute; 
-    top:337%;
+    top:343%;
     left:62%;}
 #arrow-4{
     position:absolute; 
-    top:392%;
+    top:398%;
     left:48%;
 }

@@ -28,7 +28,10 @@ h2{
 p, ul{
     font-family:sans-serif;
 }
-
+#margin{
+    margin-left:70px;
+    margin-right:70px;
+}
 
 /*Links*/
  a:link, a:visited{

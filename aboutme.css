@@ -19,7 +19,7 @@ h2{
     color:purple; 
     font-family: 'Poiret One', cursive;
 }
-p{
+p, li{
     font-family: sans-serif;
 }
 #main-title{
@@ -32,7 +32,11 @@ p{
 }
 #picture-me{
     position:absolute;
-}      
+}
+#margin{
+    margin-left: 70px;
+    margin-right: 70px;
+}
   
 /*Links*/
  a:link, a:visited{
