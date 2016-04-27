@@ -22,7 +22,7 @@ body{
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/fd/Roosevelt_Stadium_night_2.jpg"); 
     background-size: 1400px;
     color:white;
-    font-family:sans-serif;
+    font-family: 'Raleway', sans-serif;  
 }
 
 #title{
@@ -42,7 +42,7 @@ body{
     color:black;
 }
 p{
-    font-weight:bold;
+    font-weight:bold
 }
 #dir{
     text-align: center;

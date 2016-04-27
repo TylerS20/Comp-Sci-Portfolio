@@ -14,7 +14,7 @@ body{
     background-color:white;
 }
 p, li{
-    font-family:sans-serif;
+    font-family: 'Raleway', sans-serif; 
 }
 h2{
     color: #0066cc; 

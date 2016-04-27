@@ -14,7 +14,7 @@ h2{
 }
 p{
     color:white; 
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif; 
 }
 #coding{
     background-color:white; 
@@ -22,7 +22,7 @@ p{
 }
 li{
     color:white; 
-    font-family:sans-serif;
+    font-family: 'Raleway', sans-serif; 
 }
 
 #firstPicture{
