@@ -1,46 +1,51 @@
 /*Links*/
  a:link, a:visited{
-
-        font-weight:bold;
-        font-family:sans-serif;
-        font-size:20px;
-        color:slategrey;
-        background-color:white;
-        text-align:center;
-        padding-left:26px;
-        padding-right:26px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin: -2px;
-        text-decoration:none;
-    }
+    font-weight:bold;
+    font-family: 'Poiret One', cursive;
+    font-size:20px;
+    color:slategrey;
+    background-color:white;
+    text-align:center;
+    padding-left:2%;
+    padding-right:2%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: -0.2%;
+    text-decoration:none;
+}
     
-    a:hover, a:active{
-        background-color:gainsboro;
-    }
+a:hover, a:active{
+    background-color:gainsboro;
+}
 
 body{
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/fd/Roosevelt_Stadium_night_2.jpg"); 
     background-size: 1400px;
     color:white;
-    
+    font-family:sans-serif;
 }
 
-#title{text-align:center;}
+#title{
+    text-align:center;
+    font-family: 'Ruthie', cursive;
+    font-size:80px;
+}
 
 #list li{
-        display:inline-block;
-        text-align:center;
-        padding-left:10.5%;
-    }
-    
-#par{
+    display:inline-block;
     text-align:center;
-    }
+    padding-left:10.5%;
+}
     
 #info1, #info2, #info3{
     text-align:center;
     color:black;
+}
+p{
+    font-weight:bold;
+}
+#dir{
+    text-align: center;
 }
 
 /* The properties of the white rectangle in the middle of the page*/
@@ -50,6 +55,6 @@ body{
     background: white;
     position: absolute;
     left:25%;
-    top: 54%;
-    z-index:-1;
+    top: 67%;
+    z-index:-2;
 }

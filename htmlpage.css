@@ -11,42 +11,51 @@ root {
     display: block;
 }
 body{
-        background-color:whit;
-    }
-p{font-family:sans-serif;}
-h2{color:blueviolet; font-family:serif;}
+    background-color:whit;
+}
+p, li{
+    font-family:sans-serif;
+}
+h2{
+    color:blueviolet; 
+    font-family: 'Poiret One', cursive;
+    
+}
 #main-header{
     position:absolute;
     left:20px;
-    top:500px;
+    top:470px;
     color:white;
-    font-size:70px;
-    }
-#example{color:blueviolet;}
+    font-size:90px;
+    font-family: 'Ruthie', cursive;
+}
+#example{
+    color:blueviolet;
+}
         
 /*Links*/
 a:link, a:visited{
-
     font-weight:bold;
-    font-family:sans-serif;
+    font-family: 'Poiret One', cursive;
     font-size:20px;
     color:blueviolet;
     background-color:white;
     text-align:center;
-    padding-left:26px;
-    padding-right:26px;
+    padding-left:2%;
+    padding-right:2%;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin: -2px;
+    margin: -0.2%;
     text-decoration:none;
-    }
-
+}
 a:hover, a:active{
     background-color:gainsboro;
-    }
+}
         
 /*DEMONSTRATION*/
     .showbox {
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
     float: left;
     margin: 4em 1em;
     width: 150px;

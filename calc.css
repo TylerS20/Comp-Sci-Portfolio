@@ -3,12 +3,14 @@ body{
     background-image: url("https://newevolutiondesigns.com/images/freebies/city-wallpaper-38.jpg");
     color: black; 
     text-align:center;
+    font-family:sans-serif;
 }
 h1{
     color:white;
+    text-align: center;
+    font-family: 'Ruthie', cursive;
+    font-size: 80px
 }
-
-#title{text-align: center;}
 
 /* The properties of the white rectangle in the middle of the page*/
 #rectangle{
@@ -17,28 +19,27 @@ h1{
     background: white;
     position: absolute;
     left:40%;
-    top: 33%;
+    top: 53%;
     z-index:-1;
 }
 
 /*Links*/
  a:link, a:visited{
-
-        font-weight:bold;
-        font-family:sans-serif;
-        font-size:20px;
-        color: darkslateblue;
-        background-color:white;
-        text-align:center;
-        padding-left:26px;
-        padding-right:26px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin: -2px;
-        text-decoration:none;
-    }
+    font-weight:bold;
+    font-family: 'Poiret One', cursive;
+    font-size:20px;
+    color: darkslateblue;
+    background-color:white;
+    text-align:center;
+    padding-left:2%;
+    padding-right:2%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: -0.2%;
+    text-decoration:none;
+}
     
-    a:hover, a:active{
-        background-color: gainsboro;
-    }
+a:hover, a:active{
+    background-color: gainsboro;
+}
     

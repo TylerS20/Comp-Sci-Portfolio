@@ -3,13 +3,14 @@ body{
     background-image: url("http://p1.pichost.me/i/68/1928853.jpg?dl=1");
     color: black;
     text-align: center;
+    font-family: sans-serif;
 }
 
 /*Heading Properties*/
 h1{
     color:white;
-    font-family:serif;
-    font-size:50px;
+    font-family: 'Ruthie', cursive;
+    font-size:70px;
 }
 
 /* The properties of the white rectangle in the middle of the page*/
@@ -19,28 +20,26 @@ h1{
     background: white;
     position: absolute;
     left:29%;
-    top: 150px;
+    top: 30%;
     z-index:-1;
 }
 
 /*Links*/
  a:link, a:visited{
-
-        font-weight:bold;
-        font-family:sans-serif;
-        font-size:20px;
-        color:midnightblue;
-        background-color:white;
-        text-align:center;
-        padding-left:26px;
-        padding-right:26px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin: -2px;
-        text-decoration:none;
-    }
-    
-    a:hover, a:active{
-        background-color:whitesmoke;
-    }
+    font-family: 'Poiret One', cursive;
+    font-weight:bold;
+    font-size:20px;
+    color:midnightblue;
+    background-color:white;
+    text-align:center;
+    padding-left:2%;
+    padding-right:2%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: -0.2%;
+    text-decoration:none;
+}
+a:hover, a:active{
+    background-color:whitesmoke;
+}
     
