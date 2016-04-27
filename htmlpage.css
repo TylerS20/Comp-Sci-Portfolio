@@ -11,7 +11,7 @@ root {
     display: block;
 }
 body{
-        background-color:lavender;
+        background-color:whit;
     }
 p{font-family:sans-serif;}
 h2{color:blueviolet; font-family:serif;}
@@ -30,8 +30,8 @@ a:link, a:visited{
     font-weight:bold;
     font-family:sans-serif;
     font-size:20px;
-    color:white;
-    background-color:blueviolet;
+    color:blueviolet;
+    background-color:white;
     text-align:center;
     padding-left:26px;
     padding-right:26px;
@@ -42,7 +42,7 @@ a:link, a:visited{
     }
 
 a:hover, a:active{
-    background-color:#7C27CB;
+    background-color:gainsboro;
     }
         
 /*DEMONSTRATION*/

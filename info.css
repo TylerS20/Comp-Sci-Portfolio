@@ -40,4 +40,16 @@ body{
     
 #info1, #info2, #info3{
     text-align:center;
+    color:black;
+}
+
+/* The properties of the white rectangle in the middle of the page*/
+#rectangle{
+    width: 50%;
+    height: 10%;
+    background: white;
+    position: absolute;
+    left:25%;
+    top: 54%;
+    z-index:-1;
 }

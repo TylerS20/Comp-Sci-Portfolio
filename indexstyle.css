@@ -8,11 +8,11 @@
 */
 
 /*General Page*/
-body{background-color: lavender;}
+body{background-color: white;}
 
 /*Titles and Paragraphs*/
 #welcome-title{position:absolute; top:480px; left:20px; font-size:90px; font-family:serif;color:white;}
-h2{font-family:serif; font-size:30px; color:blue;}
+h2{font-family:serif; font-size:30px; color: #1a8cff;}
 p, ul{font-family:sans-serif;}
 
 
@@ -22,17 +22,17 @@ p, ul{font-family:sans-serif;}
         font-weight:bold;
         font-family:sans-serif;
         font-size:20px;
-        color:white;
-        background-color:blue;
+        color: #1a8cff;
+        background-color:white;
         text-align:center;
-        padding-left:26px;
-        padding-right:26px;
+        padding-left: 1%;
+        padding-right: 1%;
         padding-top: 10px;
         padding-bottom: 10px;
-        margin: -2px;
+        margin: -0.2%;
         text-decoration:none;
     }
     
     a:hover, a:active{
-        background-color:#0000CC;
+        background-color:gainsboro;
     }
