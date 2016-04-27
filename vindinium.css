@@ -6,7 +6,7 @@ h1{
     color:white; 
     text-align:center; 
     font-family: 'Ruthie', cursive;
-    font-size:80px;
+    font-size:100px;
 }
 h2{
     color:white; 
@@ -31,7 +31,6 @@ li{
 
 /*Links*/
  a:link, a:visited{
-
     font-weight:bold;
     font-family: 'Poiret One', cursive;
     font-size:20px;
