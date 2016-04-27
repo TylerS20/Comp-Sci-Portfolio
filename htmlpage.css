@@ -11,7 +11,7 @@ root {
     display: block;
 }
 body{
-    background-color:whit;
+    background-color:white;
 }
 p, li{
     font-family:sans-serif;
@@ -60,7 +60,7 @@ a:hover, a:active{
     margin: 4em 1em;
     width: 150px;
     height: 60px;
-    border: 2px solid blueviolet;
+    border: 2px solid #0066cc;
     background-color: #fff;
     line-height: 60px;
     text-align: center;
