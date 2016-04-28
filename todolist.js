@@ -19,7 +19,7 @@ form.addEventListener( 'submit', function(evt) {
     todo.innerHTML += '<div style= "font-weight: bold;">' + text + '</div>';
   }
   else if (dropdown.value == "blue"){
-    todo.innerHTML += '<div style= "color: ;">' + text + '</div>';
+    todo.innerHTML += '<div style= "color: steelblue;">' + text + '</div>';
 
   }
   else if (dropdown.value == "italics"){
