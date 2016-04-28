@@ -15,11 +15,11 @@ h1{
 
 /* The properties of the white rectangle in the middle of the page*/
 #rectangle{
-    width: 42%;
+    width: 48%;
     height: 145%;
     background: white;
     position: absolute;
-    left:29%;
+    left:26%;
     top: 30%;
     z-index:-1;
 }
