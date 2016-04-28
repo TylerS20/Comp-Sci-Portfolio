@@ -2,12 +2,13 @@
 body{
     background-image: url("http://www.fubiz.net/wp-content/uploads/2012/10/Cityscape-Chicago51.jpg");
     background-size: 1400px;
-    color:white;
+    color:black;
     font-size:15px;
     font-family: 'Raleway', sans-serif; 
   }
 h1{
     text-align:center;
+    color:white;
     font-family: 'Ruthie', cursive;
     font-size:80px;
 }
